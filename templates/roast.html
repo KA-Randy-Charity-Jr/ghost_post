@@ -1,0 +1,18 @@
+<h1> RoAsT PoStS</h1>
+<a href="/newpost"> add post </a>
+<a href="/"> home </a>
+
+
+{% for post in posts %}
+     {% if post.boasts%}
+
+     {% else %}   
+        <p>ROAST:</p>
+     
+        <p>{{post.text}}</p>
+        <p>{{post.added}}</p>
+        <p>{{post.post_date}}</p>
+        <a href="/upvote/{{post.id}}"><button>upvote</button></a>
+        <a href="/downvote/{{post.id}}"><button>downvote</button></a>
+    {% endif %} 
+{% endfor %}    
