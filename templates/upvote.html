@@ -3,7 +3,7 @@
 <a href="/roasts">Roasts</a>
 <a href="/boasts">Boasts</a>
 <a href="/">home</a>
-
+<hr>
 
 
 {% for post in posts %}
@@ -17,5 +17,5 @@
     <p>{{post.post_date}}</p>
     <a href="/upvote/{{post.id}}"><button>upvote</button></a>
     <a href="/downvote/{{post.id}}"><button>downvote</button></a>
-
+    <hr>
 {% endfor %}    
